@@ -47,11 +47,10 @@
 
 	$codeLivre="SELECT code FROM livre WHERE Titre='$titre' and Auteur='$auteur' ";
 	$requeteCode=$pdo->query($codeLivre);
-	$resultatCode=$requeteCode->fetch(PDO::FETCH_OBJ);
-	for($n=0;$n<count($requeteCode);$n++)
-	{
+	$resultatCode=$requeteCode->fetchAll(PDO::FETCH_OBJ);
+	for($n=0;$n<count($resultatCode);$n++){
 		echo '<pre>';
-		echo($resultatCode[$n]->code);
+			echo($resultatCode[$n]->code);
 	}
 
 
