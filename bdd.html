@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Base de Donnée</title>
+</head>
+<body>
+	<h1>Base de données MySQL</h1>
+	<?php
+
+	$prenom = $_POST["prenom"];
+	$nom = $_POST["nom"];
+	$age = $_POST["age"];
+	$mail = $_POST["mail"];
+
+	$pdo = new PDO("mysql:host=localhost;dbname=bibliothoque" , "admin", "admin");
+
+	$sql = "SELECT * FROM livre
+	echo "$prenom"
+	echo "$nom"
+	echo "$age"
+	echo "$mail"
+
+	?>
+</body>
+</html>

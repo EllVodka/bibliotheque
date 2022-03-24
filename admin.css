@@ -1,0 +1,17 @@
+body{
+	background-image:url(fondLivre.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	color: white;
+	font-family: Comic Sans MS;
+}
+fieldset{
+	border-radius: 2rem;
+}
+input{
+	border-radius: 1rem; 
+}
+pre{
+	font-family: Comic Sans MS;
+}

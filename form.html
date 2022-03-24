@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!--<script type="text/javascript" src="page.js"></script>-->
+</head>
+<body>
+	<form method="post" action="bdd.php">
+
+		<fieldset>
+			<legend>Inscription</legend>
+
+			<label for="civ">Civilité</label>
+			<center>
+			<select required="civ">
+				<option>Civilité</option>
+				<option>Monsieur</option>
+				<option>Madame</option>
+			</select>
+		</center>
+			<br />
+
+			<label for="nom">Nom</label>
+			<center>
+				<input type="text" name="nom" id="nom" placeholder="Entrez votre nom" />
+			</center><br />
+
+
+			<label for="nom">Prenom</label>
+			<center>
+				<input type="text" name="prenom" id="prenom" placeholder="Entrez votre prenom" />
+			</center><br />
+
+			<!--<label for="adresse">Adresse</label>
+			<center><input type="text" name="adresse" required="adresse" placeholder="Entrez votre adresse"></center>-->
+
+
+			<label for="mail">Adresse email</label>
+			<center><input type="mail" name="mail" id="mail" required placeholder="Entrez votre Email"></center>
+
+			<label for="nom">Age</label>
+			<center>
+				<input type="text" name="age" id="age" required placeholder="Entrez votre age" />
+				<br><br>
+				<input type="submit" value="Envoyer" />
+			</center>
+		</fieldset>
+		</form>
+
+		
+	<form action="emprunt.php" method="post">
+		<fieldset>
+			<legend>Emprumt</legend>
+			<fieldset>
+				<legend>Authentification</legend>
+			<label>Entrez votrez prenom :</label>
+
+			<center>
+				<input type="text" name="prenomEmprunt">
+			</center>
+			<br><br>
+			<label>Entrez votre nom :</label>
+			<center>
+				<input type="text" name="nomEmprunt">
+			</center>
+			
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Livre</legend>
+			<label>Entre le titre du livre que vous voulez emprunter :</label>
+			<center>
+			<input type="text" name="titre">
+		</center>
+		<label>Entrez le nom de l'auteur de ce livre :</label>
+		<center>
+			<input type="text" name="auteur">
+		</center>
+		</fieldset>
+			<br><br>
+			<center>
+				<input type="submit" name="">
+			</center>
+		</fieldset>
+	</form>
+</body>
+</html>
